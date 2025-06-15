@@ -12,6 +12,14 @@
       padding: 0;
     }
 
+    /* Logo in the top left corner */
+    .top-left-logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10; /* Make sure it stays above the background */
+    }
+
     body, html {
       font-family: 'Proxima Nova', sans-serif;
       height: 100%;
@@ -83,11 +91,12 @@
   </style>
 </head>
 <body>
+  <!-- Logo in the top left corner -->
+  <img src="img/cw_logo-2.png" class="top-left-logo" alt="Charity Water Logo">
+  <!-- Main hero section -->
   <div class="hero">
     <div class="hero-content">
-      <div class="logo">
-        <img src="img/cw_logo-2.png"> 
-      </div>
+      <!-- Removed logo from here -->
       <div class="headline">Give Clean Water. See Your Impact</div>
       <div class="subheadline">100% of your donation brings safe water to people in need—with proof every time.</div>
       <a href="#" class="cta-button">Donate Now</a>
